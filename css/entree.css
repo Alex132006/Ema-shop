@@ -4,11 +4,11 @@
     box-sizing: border-box;
 }
 body {
-    background-image: url(../images/image.png);
-    background-size: cover;
+    background: black;
+    /* background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,7 +44,7 @@ body {
     transform: translate(-50%, -50%);
     font-size: 24px;
     font-weight: bold;
-    color: #43a638;
+    color: #000000;
     z-index: 2;
 }
 

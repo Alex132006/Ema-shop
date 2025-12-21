@@ -3,7 +3,7 @@ setTimeout(function () {
   // Simuler la fin du chargement
   document.querySelector(".loading-text").innerHTML = "bienvenue !";
   document.querySelector(".subtext").innerHTML =
-    "Redirection vers l'application...";
+    "Vente de vetement homme et femme";
 
   // Arrêter l'animation
   document.querySelector(".titre").style.animation = "none";
