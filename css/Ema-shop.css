@@ -145,17 +145,17 @@ h2 {
 .fa-shopping-cart,
 .fa-history {
     background: #00000000;
-        color: #ffffff;
-        padding: 10px 10px;
-        border-radius: 20px;
-        font-size: 18px;
-        margin-right: -10px;
-        cursor: pointer;
-    }
-    
-    .fa-solid:hover {
-        color: #5d5d5d;
-    }
+    color: #ffffff;
+    padding: 10px 10px;
+    border-radius: 20px;
+    font-size: 18px;
+    margin-right: -10px;
+    cursor: pointer;
+}
+
+.fa-solid:hover {
+    color: #5d5d5d;
+}
 
 .section-active {
     padding-top: 50px;
@@ -311,6 +311,8 @@ h2 {
     top: 8px;
     font-size: 14px;
     text-align: center;
+    text-decoration: none;
+    color: #000000;
 }
 
 .note {
@@ -444,8 +446,8 @@ footer {
     max-width: 1200px;
     margin: 0 auto;
     gap: 30px;
-    border-top: 1px solid rgba(255, 255, 255, 0.2); 
-    padding-top: 30px; 
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 30px;
 }
 
 

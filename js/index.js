@@ -11,19 +11,19 @@ setTimeout(function () {
   // Redirection après 1 seconde supplémentaire
   setTimeout(function () {
     // Dans ton cas réel, tu mettras ta vraie page ici
-    window.location.href = "../html/Ema-shop.html";
+    window.location.href = "html/Ema-shop.html";
 
     // Pour la démo, on affiche juste un message
     // alert('Redirection vers la page principale...');
 
     // Code réel à utiliser :
-    window.location.href = "../html/Ema-shop.html";
+    window.location.href = "html/Ema-shop.html";
   }, 700);
 }, 2000);
 
 // Effet de clic pour accélérer
 document.querySelector(".container").addEventListener("click", function () {
-  document.querySelector(".loadin../thml/acceuil.htmlg-text").innerHTML =
+  document.querySelector(".loadin../html/acceuil.html").innerHTML =
     "ACCÉLÉRATION...";
   document.querySelector(".subtext").innerHTML = "Chargement rapide activé";
 
