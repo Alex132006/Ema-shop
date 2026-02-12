@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Panier - Ema-Shop</title>
+    <!-- Favicon -->
+    <link rel="icon" href="../images/alex.jpg" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../images/alex.jpg">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="../css/Ema-shop.css">
+    <link rel="stylesheet" href="../css/Pannier.css">
+</head>
+
+<body>
+
+    <!-- Indicateur de chargement -->
+    <div class="loading" id="loading">
+        <div class="container-categorie">
+            <h2><i class="fas fa-shopping-cart"></i> Pannier</h2>
+            <div class="container-cate" title="Pannier">
+                <a href="#"><i class="fa-solid fa-history"></i></a>
+            </div>
+        </div>
+
+
+        <!-- Section Panier -->
+        <section class="section-active" id="section-panier">
+            <div class="container">
+                <!-- <h2 class="panier-title">Votre Panier</h2> -->
+
+                <!-- Articles du panier -->
+                <div class="panier-items">
+                    <!-- Exemple d'article dans le panier -->
+                    <div class="panier-item">
+                        <img src="../img/Screenshot from 2025-12-18 02-15-46.png" alt="Produit" class="panier-img">
+                        <div class="panier-details">
+                            <h3>Habit complet</h3>
+                            <!-- <p class="panier-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p> -->
+                            <div class="panier-prix">
+                                <span class="prix-actuel">300 CFA</span>
+                                <span class="prix-ancien">2000 CFA</span>
+                            </div>
+                        </div>
+                        <div class="panier-controls">
+                            <div class="quantite-controls">
+                                <button class="quantite-btn moins">-</button>
+                                <span class="quantite">1</span>
+                                <button class="quantite-btn plus">+</button>
+                            </div>
+                            <button class="supprimer-btn"><i class="fa-solid fa-trash"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="panier-items">
+                        <!-- Exemple d'article dans le panier -->
+                        <div class="panier-item">
+                            <img src="../img/Screenshot from 2025-12-18 02-18-36.png" alt="Produit" class="panier-img">
+                            <div class="panier-details">
+                                <h3>Habit complet</h3>
+                                <!-- <p class="panier-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p> -->
+                                <div class="panier-prix">
+                                    <span class="prix-actuel">300 CFA</span>
+                                    <span class="prix-ancien">2000 CFA</span>
+                                </div>
+                            </div>
+                            <div class="panier-controls">
+                                <div class="quantite-controls">
+                                    <button class="quantite-btn moins">-</button>
+                                    <span class="quantite">1</span>
+                                    <button class="quantite-btn plus">+</button>
+                                </div>
+                                <button class="supprimer-btn"><i class="fa-solid fa-trash"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="panier-items">
+                            <!-- Exemple d'article dans le panier -->
+                            <div class="panier-item">
+                                <img src="../img/Screenshot from 2025-12-18 02-11-57.png" alt="Produit"
+                                    class="panier-img">
+                                <div class="panier-details">
+                                    <h3>Habit complet</h3>
+                                    <!-- <p class="panier-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p> -->
+                                    <div class="panier-prix">
+                                        <span class="prix-actuel">300 CFA</span>
+                                        <span class="prix-ancien">2000 CFA</span>
+                                    </div>
+                                </div>
+                                <div class="panier-controls">
+                                    <div class="quantite-controls">
+                                        <button class="quantite-btn moins">-</button>
+                                        <span class="quantite">1</span>
+                                        <button class="quantite-btn plus">+</button>
+                                    </div>
+                                    <button class="supprimer-btn"><i class="fa-solid fa-trash"></i></button>
+                                </div>
+                            </div>
+
+                            <!-- Ajouter plus d'articles selon les besoins -->
+                        </div>
+
+                        <!-- Total et Checkout -->
+                        <div class="panier-total">
+                            <div class="total-details">
+                                <p>Sous-total: <span id="sous-total">300 CFA</span></p>
+                                <p>Livraison: <span id="livraison">Gratuite</span></p>
+                                <p class="total-final">Total: <span id="total">300 CFA</span></p>
+                            </div>
+                            <button class="checkout-btn">Procéder au paiement</button>
+                        </div>
+
+                        <!-- Message si panier vide -->
+                        <div class="panier-vide" id="panier-vide" style="display: none;">
+                            <i class="fa-solid fa-shopping-cart"></i>
+                            <p>Votre panier est vide</p>
+                            <a href="../html/Ema-shop.html" class="continuer-achat">Continuer les achats</a>
+                        </div>
+                    </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>EMA-Services</h3>
+                    <p>Votre plateforme de services tout-en-un</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-phone"></i> +242 XXX XX XX XX</p>
+                    <p><i class="fas fa-envelope"></i> contact@ema-services.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; Nous sommes pret a vous servir.</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="../js/panier.js"></script>
+
+</body>
+
+</html>
