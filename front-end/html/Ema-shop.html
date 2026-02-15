@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -14,1494 +14,754 @@
 </head>
 
 <body>
-
     <!-- Indicateur de chargement -->
     <div class="loading" id="loading">
         <div class="spinner">
-            <div class="container-categorie">
-                <h2><i class="fas fa-shop"></i> EMA-Shop</h2>
-
-                <div class="container-cate" title="Pannier">
-                    <a href="#"><i class="fa-solid fa-history"></i></a>
-                    <a href="Pannier.html"><i class="fa-solid fa-shopping-cart"></i></a>
-
-                    <select class="btn" id="choix" name="Categorie">
-                        <option value="Categorie">Categorie</option>
-                        <option value="#Draps">Pagne</option>
-                        <option value="#Sac">Sac</option>
-                        <option value="#Lacoste">Lacoste</option>
-                        <option value="#Tish-short">Tish-short</option>
-                        <option value="#Survertte">Survertte</option>
-                        <option value="#Berleti">Berleti</option>
-                        <option value="#Chaussure">Chaussure</option>
-                        <option value="#Draps">Draps</option>
-                        <option value="#Rideaux">Rideaux</option>
-
-                    </select>
-
-                </div>
-            </div>
-
-            <!-- Image Pub -->
-            <div class="pub-container">
-                <div class="slider">
-                    <img src="../img/IMG_7724.JPG" style="object-fit:contain;" alt="Publicité EMA Services">
-                    <img src="../img/IMG_7710.JPG" style="object-fit:contain;" alt="Publicité EMA Services">
-                    <img src="../img/IMG_7720.JPG" style="object-fit:contain;" alt="Publicité EMA Services">
-                    <img src="../img/IMG_7711.JPG" style="object-fit:contain;" alt="Publicité EMA Services">
-                </div>
-            </div>
-
-            <!--recherche-->
-            <!-- <div class="barre-recherche">
-        <a href="../html/acceuil.html"></a>
-        <form role="search" method="get" action="/recherche">
-            <input type="search" class="recherche" id="search-input" name="q" placeholder="Entrez votre produit...">
-            <i class="fa-solid fa-magnifying-glass"></i>
-        </form> -->
+            <!-- Cette div sera masquée après chargement -->
         </div>
+    </div>
 
-        <!-- Section Hôtel (active par défaut) -->
-        <section class="section-active" id="Pagne">
-            <h1 style="color: rgb(0, 0, 0); text-align: center; position: relative; top: 60px;">Pagne</h1>
-            <div class="container">
+    <!-- En-tête avec catégories -->
+    <div class="container-categorie">
+        <h2><i class="fas fa-shop"></i> EMA-Shop</h2>
 
-                <div class="mini-container">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                        <img src="../img/IMG_7749.JPG" class="img" alt="Chambre de luxe">
-                    </a>
-                    <div class="somme">
-                        <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                        <p class="ancien-montant">2000.cfa</p>
-                    </div>
-                    <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                    <p class="nom-produit">habit complet...</p>
-                    <div class="note">
-                        <p><i class="fa-solid fa-star"></i>4,5</p>
-                        <p class="notes">734 notes</p>
-                    </div>
-                </div>
-                
-                <div class="mini-container">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                        <img src="../img/IMG_7751.JPG" class="img" alt="Chambre de luxe">
-                    </a>
-                    <div class="somme">
-                        <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                        <p class="ancien-montant">2000.cfa</p>
-                    </div>
-                    <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                    <p class="nom-produit">habit complet...</p>
-                    <div class="note">
-                        <p><i class="fa-solid fa-star"></i>4,5</p>
-                        <p class="notes">734 notes</p>
-                    </div>
-                </div>
-                
-                <div class="mini-container">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                        <img src="../img/IMG_7725.JPG" class="img" alt="Chambre de luxe">
-                    </a>
-                    <div class="somme">
-                        <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                        <p class="ancien-montant">2000.cfa</p>
-                    </div>
-                    <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                    <p class="nom-produit">habit complet...</p>
-                    <div class="note">
-                        <p><i class="fa-solid fa-star"></i>4,5</p>
-                        <p class="notes">734 notes</p>
-                    </div>
-                </div>
+        <select class="btn" id="choix" name="Categorie" onchange="window.location.hash=this.value">
+            <option value="">Catégorie</option>
+            <option value="#Pagne">Pagne</option>
+            <option value="#Sac">Sac</option>
+            <option value="#Lacoste">Lacoste</option>
+            <option value="#Tish-short">Tish-short</option>
+            <option value="#Serviette">Serviette</option>
+            <option value="#Berleti">Berleti</option>
+            <option value="#Chaussure">Chaussure</option>
+            <option value="#Draps">Draps</option>
+            <option value="#Rideaux">Rideaux</option>
+        </select>
 
-                <div class="mini-container">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                        <img src="../img/IMG_7743.JPG" class="img" alt="Chambre de luxe">
-                    </a>
-                    <div class="somme">
-                        <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                        <p class="ancien-montant">2000.cfa</p>
-                    </div>
-                    <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                    <p class="nom-produit">habit complet...</p>
-                    <div class="note">
-                        <p><i class="fa-solid fa-star"></i>4,5</p>
-                        <p class="notes">734 notes</p>
-                    </div>
-                </div>
+        <div class="container-cate" title="Panier">
+            <a href="#" title="Historique"><i class="fa-solid fa-history"></i></a>
+            <a href="Pannier.html" title="Panier"><i class="fa-solid fa-shopping-cart"></i></a>
+        </div>
+    </div>
 
-                <div class="mini-container">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                        <img src="../img/IMG_7720.JPG" class="img" alt="Chambre de luxe">
-                    </a>
-                    <div class="somme">
-                        <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                        <p class="ancien-montant">2000.cfa</p>
-                    </div>
-                    <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                    <p class="nom-produit">habit complet...</p>
-                    <div class="note">
-                        <p><i class="fa-solid fa-star"></i>4,5</p>
-                        <p class="notes">734 notes</p>
-                    </div>
-                </div>
-                
-                <div class="mini-container">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                        <img src="../img/IMG_7723.JPG" class="img" alt="Chambre de luxe">
-                    </a>
-                    <div class="somme">
-                        <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                        <p class="ancien-montant">2000.cfa</p>
-                    </div>
-                    <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                    <p class="nom-produit">habit complet...</p>
-                    <div class="note">
-                        <p><i class="fa-solid fa-star"></i>4,5</p>
-                        <p class="notes">734 notes</p>
-                    </div>
-                </div>
-                
-                <div class="mini-container">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                        <img src="../img/IMG_7724.JPG" class="img" alt="Chambre de luxe">
-                    </a>
-                    <div class="somme">
-                        <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                        <p class="ancien-montant">2000.cfa</p>
-                    </div>
-                    <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                    <p class="nom-produit">habit complet...</p>
-                    <div class="note">
-                        <p><i class="fa-solid fa-star"></i>4,5</p>
-                        <p class="notes">734 notes</p>
-                    </div>
-                </div>
-                
-                <div class="mini-container">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                        <img src="../img/IMG_7725.JPG" class="img" alt="Chambre de luxe">
-                    </a>
-                    <div class="somme">
-                        <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                        <p class="ancien-montant">2000.cfa</p>
-                    </div>
-                    <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                    <p class="nom-produit">habit complet...</p>
-                    <div class="note">
-                        <p><i class="fa-solid fa-star"></i>4,5</p>
-                        <p class="notes">734 notes</p>
-                    </div>
-                </div>
-                
-                <div class="mini-container">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                        <img src="../img/IMG_7728.JPG" class="img" alt="Chambre de luxe">
-                    </a>
-                    <div class="somme">
-                        <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                        <p class="ancien-montant">2000.cfa</p>
-                    </div>
-                    <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                    <p class="nom-produit">habit complet...</p>
-                    <div class="note">
-                        <p><i class="fa-solid fa-star"></i>4,5</p>
-                        <p class="notes">734 notes</p>
-                    </div>
-                </div>
-                
-                <div class="mini-container">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                        <img src="../img/IMG_7735.JPG" class="img" alt="Chambre de luxe">
-                    </a>
-                    <div class="somme">
-                        <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                        <p class="ancien-montant">2000.cfa</p>
-                    </div>
-                    <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                    <p class="nom-produit">habit complet...</p>
-                    <div class="note">
-                        <p><i class="fa-solid fa-star"></i>4,5</p>
-                        <p class="notes">734 notes</p>
-                    </div>
-                </div>
+    <!-- Image Pub - Carrousel -->
+    <div class="pub-container">
+        <div class="slider">
+            <img src="../img/IMG_7724.JPG" style="object-fit:contain;" alt="Publicité EMA Services - Promotion">
+            <img src="../img/IMG_7710.JPG" style="object-fit:contain;" alt="Publicité EMA Services - Nouveautés">
+            <img src="../img/IMG_7720.JPG" style="object-fit:contain;" alt="Publicité EMA Services - Soldes">
+            <img src="../img/IMG_7711.JPG" style="object-fit:contain;" alt="Publicité EMA Services - Collection">
+        </div>
+    </div>
 
-
-                <div class="mini-container">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                        <img src="../img/IMG_7710.JPG" class="img" alt="Chambre de luxe">
-                    </a>
-                    <div class="somme">
-                        <p class="montant"><i class="fa-solid fa-wallet"></i>300.cfa</p>
-                        <p class="ancien-montant">2000.cfa</p>
-                    </div>
-                    <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                    <p class="nom-produit">habit complet...</p>
-                    <div class="note">
-                        <p><i class="fa-solid fa-star"></i>4,5</p>
-                        <p class="notes">734 notes</p>
-                    </div>
+    <!-- Section Pagne -->
+    <section class="section-active" id="Pagne">
+        <h1 style="color: rgb(0, 0, 0); text-align: center; position: relative; top: 60px;">Pagne</h1>
+        <div class="container">
+            <!-- Produit 1 -->
+            <div class="mini-container">
+                <i class="fa-solid fa-cart-shopping" title="Ajouter au panier"></i>
+                <a href="../html/product-detail.html" style="text-decoration: none;">
+                    <img src="../img/IMG_7749.JPG" class="img" alt="Pagne traditionnel - Habit complet">
+                </a>
+                <div class="somme">
+                    <p class="montant"><i class="fa-solid fa-wallet"></i> 300 cfa</p>
+                    <p class="ancien-montant">2000 cfa</p>
                 </div>
-                
-                <div class="mini-container">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                        <img src="../img/IMG_7711.JPG" class="img" alt="Chambre de luxe">
-                    </a>
-                    <div class="somme">
-                        <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                        <p class="ancien-montant">2000.cfa</p>
-                    </div>
-                    <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                    <p class="nom-produit">habit complet...</p>
-                    <div class="note">
-                        <p><i class="fa-solid fa-star"></i>4,5</p>
-                        <p class="notes">734 notes</p>
-                    </div>
-                </div>
-            </section>
-            <!-- Pagnes -->
-
-
-            
-            <section class="section-active" id="Sac">
-                <h1 style="color: rgb(0, 0, 0); text-align: center; position: relative; top: 60px;">Sac  a main </h1>
-                <div class="container">
-
-                    <div class="mini-container">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                        <img src="../img/IMG_7782.JPG" class="img" alt="Chambre de luxe">
-                    </a>
-                    <div class="somme">
-                        <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                        <p class="ancien-montant">2000.cfa</p>
-                    </div>
-                    <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                    <p class="nom-produit">habit complet...</p>
-                    <div class="note">
-                        <p><i class="fa-solid fa-star"></i>4,5</p>
-                        <p class="notes">734 notes</p>
-                    </div>
-                </div>
-                
-                <div class="mini-container">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                        <img src="../img/IMG_7783.JPG" class="img" alt="Chambre de luxe">
-                    </a>
-                    <div class="somme">
-                        <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                        <p class="ancien-montant">2000.cfa</p>
-                    </div>
-                    <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                    <p class="nom-produit">habit complet...</p>
-                    <div class="note">
-                        <p><i class="fa-solid fa-star"></i>4,5</p>
-                        <p class="notes">734 notes</p>
-                    </div>
-                </div>
-                
-                <div class="mini-container">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                        <img src="../img/IMG_7784.JPG" class="img" alt="Chambre de luxe">
-                    </a>
-                    <div class="somme">
-                        <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                        <p class="ancien-montant">2000.cfa</p>
-                    </div>
-                    <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                    <p class="nom-produit">habit complet...</p>
-                    <div class="note">
-                        <p><i class="fa-solid fa-star"></i>4,5</p>
-                        <p class="notes">734 notes</p>
-                    </div>
-                </div>
-
-                <div class="mini-container">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                        <img src="../img/IMG_7764.JPG" class="img" alt="Chambre de luxe">
-                    </a>
-                    <div class="somme">
-                        <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                        <p class="ancien-montant">2000.cfa</p>
-                    </div>
-                    <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                    <p class="nom-produit">habit complet...</p>
-                    <div class="note">
-                        <p><i class="fa-solid fa-star"></i>4,5</p>
-                        <p class="notes">734 notes</p>
-                    </div>
-                </div>
-                
-                <div class="mini-container">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                        <img src="../img/IMG_7768.JPG" class="img" alt="Chambre de luxe">
-                    </a>
-                    <div class="somme">
-                        <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                        <p class="ancien-montant">2000.cfa</p>
-                    </div>
-                    <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                    <p class="nom-produit">habit complet...</p>
-                    <div class="note">
-                        <p><i class="fa-solid fa-star"></i>4,5</p>
-                        <p class="notes">734 notes</p>
-                    </div>
-                </div>
-                
-                <div class="mini-container">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                        <img src="../img/IMG_7772.JPG" class="img" alt="Chambre de luxe">
-                    </a>
-                    <div class="somme">
-                        <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                        <p class="ancien-montant">2000.cfa</p>
-                    </div>
-                    <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                    <p class="nom-produit">habit complet...</p>
-                    <div class="note">
-                        <p><i class="fa-solid fa-star"></i>4,5</p>
-                        <p class="notes">734 notes</p>
-                    </div>
-                </div>
-                
-                <div class="mini-container">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                        <img src="../img/IMG_7774.JPG" class="img" alt="Chambre de luxe">
-                    </a>
-                    <div class="somme">
-                        <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                        <p class="ancien-montant">2000.cfa</p>
-                    </div>
-                    <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                    <p class="nom-produit">habit complet...</p>
-                    <div class="note">
-                        <p><i class="fa-solid fa-star"></i>4,5</p>
-                        <p class="notes">734 notes</p>
-                    </div>
-                </div>
-                
-                <div class="mini-container">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                        <img src="../img/IMG_7776.JPG" class="img" alt="Chambre de luxe">
-                    </a>
-                    <div class="somme">
-                        <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                        <p class="ancien-montant">2000.cfa</p>
-                    </div>
-                    <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                    <p class="nom-produit">habit complet...</p>
-                    <div class="note">
-                        <p><i class="fa-solid fa-star"></i>4,5</p>
-                        <p class="notes">734 notes</p>
-                    </div>
-                </div>
-                
-                <div class="mini-container">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                        <img src="../img/IMG_7742.JPG" class="img" alt="Chambre de luxe">
-                    </a>
-                    <div class="somme">
-                        <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                        <p class="ancien-montant">2000.cfa</p>
-                    </div>
-                    <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                    <p class="nom-produit">habit complet...</p>
-                    <div class="note">
-                        <p><i class="fa-solid fa-star"></i>4,5</p>
-                        <p class="notes">734 notes</p>
-                    </div>
-                </div>
-                
-                <div class="mini-container">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                        <img src="../img/IMG_7757.JPG" class="img" alt="Chambre de luxe">
-                    </a>
-                    <div class="somme">
-                        <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                        <p class="ancien-montant">2000.cfa</p>
-                    </div>
-                    <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                    <p class="nom-produit">habit complet...</p>
-                    <div class="note">
-                        <p><i class="fa-solid fa-star"></i>4,5</p>
-                        <p class="notes">734 notes</p>
-                    </div>
-                </div>
-                
-                <div class="mini-container">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                        <img src="../img/IMG_7760.JPG" class="img" alt="Chambre de luxe">
-                    </a>
-                    <div class="somme">
-                        <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                        <p class="ancien-montant">2000.cfa</p>
-                    </div>
-                    <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                    <p class="nom-produit">habit complet...</p>
-                    <div class="note">
-                        <p><i class="fa-solid fa-star"></i>4,5</p>
-                        <p class="notes">734 notes</p>
-                    </div>
-                </div>
-                
-                <div class="mini-container">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                        <img src="../img/IMG_7761.JPG" class="img" alt="Chambre de luxe">
-                    </a>
-                    <div class="somme">
-                        <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                        <p class="ancien-montant">2000.cfa</p>
-                    </div>
-                    <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                    <p class="nom-produit">habit complet...</p>
-                    <div class="note">
-                        <p><i class="fa-solid fa-star"></i>4,5</p>
-                        <p class="notes">734 notes</p>
-                    </div>
-                </div>
-                
-                <div class="mini-container">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                        <img src="../img/IMG_7777.JPG" class="img" alt="Chambre de luxe">
-                    </a>
-                    <div class="somme">
-                        <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                        <p class="ancien-montant">2000.cfa</p>
-                    </div>
-                    <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                    <p class="nom-produit">habit complet...</p>
-                    <div class="note">
-                        <p><i class="fa-solid fa-star"></i>4,5</p>
-                        <p class="notes">734 notes</p>
-                    </div>
-                </div>
-                
-                <div class="mini-container">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                        <img src="../img/IMG_7779.JPG" class="img" alt="Chambre de luxe">
-                    </a>
-                    <div class="somme">
-                        <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                        <p class="ancien-montant">2000.cfa</p>
-                    </div>
-                    <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                    <p class="nom-produit">habit complet...</p>
-                    <div class="note">
-                        <p><i class="fa-solid fa-star"></i>4,5</p>
-                        <p class="notes">734 notes</p>
-                    </div>
-                </div>
-                
-                <div class="mini-container">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                        <img src="../img/IMG_7785.JPG" class="img" alt="Chambre de luxe">
-                    </a>
-                    <div class="somme">
-                        <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                        <p class="ancien-montant">2000.cfa</p>
-                    </div>
-                    <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                    <p class="nom-produit">habit complet...</p>
-                    <div class="note">
-                        <p><i class="fa-solid fa-star"></i>4,5</p>
-                        <p class="notes">734 notes</p>
-                    </div>
-                </div>
-                
-                <div class="mini-container">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                        <img src="../img/IMG_7786.JPG" class="img" alt="Chambre de luxe">
-                    </a>
-                    <div class="somme">
-                        <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                        <p class="ancien-montant">2000.cfa</p>
-                    </div>
-                    <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                    <p class="nom-produit">habit complet...</p>
-                    <div class="note">
-                        <p><i class="fa-solid fa-star"></i>4,5</p>
-                        <p class="notes">734 notes</p>
-                    </div>
-                </div>
-                
-                <div class="mini-container">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                        <img src="../img/IMG_7787.JPG" class="img" alt="Chambre de luxe">
-                    </a>
-                    <div class="somme">
-                        <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                        <p class="ancien-montant">2000.cfa</p>
-                    </div>
-                    <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                    <p class="nom-produit">habit complet...</p>
-                    <div class="note">
-                        <p><i class="fa-solid fa-star"></i>4,5</p>
-                        <p class="notes">734 notes</p>
-                    </div>
-                </div>
-                
-                <div class="mini-container">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                        <img src="../img/IMG_7788.JPG" class="img" alt="Chambre de luxe">
-                    </a>
-                    <div class="somme">
-                        <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                        <p class="ancien-montant">2000.cfa</p>
-                    </div>
-                    <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                    <p class="nom-produit">habit complet...</p>
-                    <div class="note">
-                        <p><i class="fa-solid fa-star"></i>4,5</p>
-                        <p class="notes">734 notes</p>
-                    </div>
-                </div>
-                
-                <div class="mini-container">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                        <img src="../img/IMG_7789.JPG" class="img" alt="Chambre de luxe">
-                    </a>
-                    <div class="somme">
-                        <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                        <p class="ancien-montant">2000.cfa</p>
-                    </div>
-                    <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                    <p class="nom-produit">habit complet...</p>
-                    <div class="note">
-                        <p><i class="fa-solid fa-star"></i>4,5</p>
-                        <p class="notes">734 notes</p>
-                    </div>
-                </div>
-
-                <div class="mini-container">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                        <img src="../img/IMG_7712.JPG" class="img" alt="Chambre de luxe">
-                    </a>
-                    <div class="somme">
-                        <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                        <p class="ancien-montant">2000.cfa</p>
-                    </div>
-                    <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                    <p class="nom-produit">habit complet...</p>
-                    <div class="note">
-                        <p><i class="fa-solid fa-star"></i>4,5</p>
-                        <p class="notes">734 notes</p>
-                    </div>
-                </div>
-                
-                <div class="mini-container">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                        <img src="../img/IMG_7713.JPG" class="img" alt="Chambre de luxe">
-                    </a>
-                    <div class="somme">
-                        <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                        <p class="ancien-montant">2000.cfa</p>
-                    </div>
-                    <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                    <p class="nom-produit">habit complet...</p>
-                    <div class="note">
-                        <p><i class="fa-solid fa-star"></i>4,5</p>
-                        <p class="notes">734 notes</p>
-                    </div>
-                </div>
-                
-                <div class="mini-container">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                        <img src="../img/IMG_7715.JPG" class="img" alt="Chambre de luxe">
-                    </a>
-                    <div class="somme">
-                        <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                        <p class="ancien-montant">2000.cfa</p>
-                    </div>
-                    <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                    <p class="nom-produit">habit complet...</p>
-                    <div class="note">
-                        <p><i class="fa-solid fa-star"></i>4,5</p>
-                        <p class="notes">734 notes</p>
-                    </div>
-                </div>
-                
-                <div class="mini-container">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                        <img src="../img/IMG_7718.JPG" class="img" alt="Chambre de luxe">
-                    </a>
-                    <div class="somme">
-                        <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                        <p class="ancien-montant">2000.cfa</p>
-                    </div>
-                    <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                    <p class="nom-produit">habit complet...</p>
-                    <div class="note">
-                        <p><i class="fa-solid fa-star"></i>4,5</p>
-                        <p class="notes">734 notes</p>
-                    </div>
-                </div>
-
-                <div class="mini-container">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                        <img src="../img/IMG_7726.JPG" class="img" alt="Chambre de luxe">
-                    </a>
-                    <div class="somme">
-                        <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                        <p class="ancien-montant">2000.cfa</p>
-                    </div>
-                    <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                    <p class="nom-produit">habit complet...</p>
-                    <div class="note">
-                        <p><i class="fa-solid fa-star"></i>4,5</p>
-                        <p class="notes">734 notes</p>
-                    </div>
-                </div>
-                
-                <div class="mini-container">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                        <img src="../img/IMG_7727.JPG" class="img" alt="Chambre de luxe">
-                    </a>
-                    <div class="somme">
-                        <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                        <p class="ancien-montant">2000.cfa</p>
-                    </div>
-                    <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                    <p class="nom-produit">habit complet...</p>
-                    <div class="note">
-                        <p><i class="fa-solid fa-star"></i>4,5</p>
-                        <p class="notes">734 notes</p>
-                    </div>
-                </div>
-
-                <div class="mini-container">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                        <img src="../img/IMG_7742.JPG" class="img" alt="Chambre de luxe">
-                    </a>
-                    <div class="somme">
-                        <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                        <p class="ancien-montant">2000.cfa</p>
-                    </div>
-                    <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                    <p class="nom-produit">habit complet...</p>
-                    <div class="note">
-                        <p><i class="fa-solid fa-star"></i>4,5</p>
-                        <p class="notes">734 notes</p>
-                    </div>
-                </div>
-
-                <div class="mini-container">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                        <img src="../img/IMG_7738.JPG" class="img" alt="Chambre de luxe">
-                    </a>
-                    <div class="somme">
-                        <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                        <p class="ancien-montant">2000.cfa</p>
-                    </div>
-                    <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                    <p class="nom-produit">habit complet...</p>
-                    <div class="note">
-                        <p><i class="fa-solid fa-star"></i>4,5</p>
-                        <p class="notes">734 notes</p>
-                    </div>
-                </div>
-                
-                <div class="mini-container">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                        <img src="../img/IMG_7739.JPG" class="img" alt="Chambre de luxe">
-                    </a>
-                    <div class="somme">
-                        <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                        <p class="ancien-montant">2000.cfa</p>
-                    </div>
-                    <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                    <p class="nom-produit">habit complet...</p>
-                    <div class="note">
-                        <p><i class="fa-solid fa-star"></i>4,5</p>
-                        <p class="notes">734 notes</p>
-                    </div>
-                </div>
-                
-                <div class="mini-container">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                        <img src="../img/IMG_7740.JPG" class="img" alt="Chambre de luxe">
-                    </a>
-                    <div class="somme">
-                        <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                        <p class="ancien-montant">2000.cfa</p>
-                    </div>
-                    <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                    <p class="nom-produit">habit complet...</p>
-                    <div class="note">
-                        <p><i class="fa-solid fa-star"></i>4,5</p>
-                        <p class="notes">734 notes</p>
-                    </div>
-                </div>
-                
-            </section>
-            <!-- Sacs-->
-
-            <section class="section-active" id="Lacoste">
-                <h1 style="color: rgb(0, 0, 0); text-align: center; position: relative; top: 60px;">Lacoste</h1>
-                <section class="container">
-
-                    <div class="mini-container">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                        <img src="../img/IMG_7733.JPG" class="img" alt="Chambre de luxe">
-                    </a>
-                    <div class="somme">
-                        <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                        <p class="ancien-montant">2000.cfa</p>
-                    </div>
-                    <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                    <p class="nom-produit">habit complet...</p>
-                    <div class="note">
-                        <p><i class="fa-solid fa-star"></i>4,5</p>
-                        <p class="notes">734 notes</p>
-                    </div>
-                </div>
-                
-                <div class="mini-container">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                        <img src="../img/IMG_7716.JPG" class="img" alt="Chambre de luxe">
-                    </a>
-                    <div class="somme">
-                        <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                        <p class="ancien-montant">2000.cfa</p>
-                    </div>
-                    <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                    <p class="nom-produit">habit complet...</p>
-                    <div class="note">
-                        <p><i class="fa-solid fa-star"></i>4,5</p>
-                        <p class="notes">734 notes</p>
-                    </div>
-                </div>
-                
-
-                <div class="mini-container">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                        <img src="../img/IMG_7721.JPG" class="img" alt="Chambre de luxe">
-                    </a>
-                    <div class="somme">
-                        <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                        <p class="ancien-montant">2000.cfa</p>
-                    </div>
-                    <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                    <p class="nom-produit">habit complet...</p>
-                    <div class="note">
-                        <p><i class="fa-solid fa-star"></i>4,5</p>
-                        <p class="notes">734 notes</p>
-                    </div>
-                </div>
-                
-                <div class="mini-container">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                        <img src="../img/IMG_7722.JPG" class="img" alt="Chambre de luxe">
-                    </a>
-                    <div class="somme">
-                        <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                        <p class="ancien-montant">2000.cfa</p>
-                    </div>
-                    <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                    <p class="nom-produit">habit complet...</p>
-                    <div class="note">
-                        <p><i class="fa-solid fa-star"></i>4,5</p>
-                        <p class="notes">734 notes</p>
-                    </div>
-                </div>
-                
-            </section>
-
-            <section class="section-active" id="Tish-short">
-                <h1 style="color: rgb(0, 0, 0); text-align: center; position: relative; top: 60px;">Tish-short</h1>
-                <div class="container">
-            
-                    <div class="mini-container">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                            <img src="../img/IMG_7755.JPG" class="img" alt="Chambre de luxe">
-                        </a>
-                        <div class="somme">
-                            <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                            <p class="ancien-montant">2000.cfa</p>
-                        </div>
-                        <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                        <p class="nom-produit">habit complet...</p>
-                        <div class="note">
-                            <p><i class="fa-solid fa-star"></i>4,5</p>
-                            <p class="notes">734 notes</p>
-                        </div>
-                    </div>
-            
-                    <div class="mini-container">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                            <img src="../img/IMG_7745.JPG" class="img" alt="Chambre de luxe">
-                        </a>
-                        <div class="somme">
-                            <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                            <p class="ancien-montant">2000.cfa</p>
-                        </div>
-                        <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                        <p class="nom-produit">habit complet...</p>
-                        <div class="note">
-                            <p><i class="fa-solid fa-star"></i>4,5</p>
-                            <p class="notes">734 notes</p>
-                        </div>
-                    </div>
-            
-                    <div class="mini-container">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                            <img src="../img/IMG_7746.JPG" class="img" alt="Chambre de luxe">
-                        </a>
-                        <div class="somme">
-                            <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                            <p class="ancien-montant">2000.cfa</p>
-                        </div>
-                        <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                        <p class="nom-produit">habit complet...</p>
-                        <div class="note">
-                            <p><i class="fa-solid fa-star"></i>4,5</p>
-                            <p class="notes">734 notes</p>
-                        </div>
-                    </div>
-            
-                    <div class="mini-container">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                            <img src="../img/IMG_7750.JPG" class="img" alt="Chambre de luxe">
-                        </a>
-                        <div class="somme">
-                            <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                            <p class="ancien-montant">2000.cfa</p>
-                        </div>
-                        <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                        <p class="nom-produit">habit complet...</p>
-                        <div class="note">
-                            <p><i class="fa-solid fa-star"></i>4,5</p>
-                            <p class="notes">734 notes</p>
-                        </div>
-                    </div>
-            
-                    <div class="mini-container">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                            <img src="../img/IMG_7753.JPG" class="img" alt="Chambre de luxe">
-                        </a>
-                        <div class="somme">
-                            <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                            <p class="ancien-montant">2000.cfa</p>
-                        </div>
-                        <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                        <p class="nom-produit">habit complet...</p>
-                        <div class="note">
-                            <p><i class="fa-solid fa-star"></i>4,5</p>
-                            <p class="notes">734 notes</p>
-                        </div>
-                    </div>
-
-                    <div class="mini-container">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                            <img src="../img/IMG_7719.JPG" class="img" alt="Chambre de luxe">
-                        </a>
-                        <div class="somme">
-                            <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                            <p class="ancien-montant">2000.cfa</p>
-                        </div>
-                        <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                        <p class="nom-produit">habit complet...</p>
-                        <div class="note">
-                            <p><i class="fa-solid fa-star"></i>4,5</p>
-                            <p class="notes">734 notes</p>
-                        </div>
-                    </div>
-            
-                    <div class="mini-container">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                            <img src="../img/IMG_7781.JPG" class="img" alt="Chambre de luxe">
-                        </a>
-                        <div class="somme">
-                            <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                            <p class="ancien-montant">2000.cfa</p>
-                        </div>
-                        <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                        <p class="nom-produit">habit complet...</p>
-                        <div class="note">
-                            <p><i class="fa-solid fa-star"></i>4,5</p>
-                            <p class="notes">734 notes</p>
-                        </div>
-                    </div>
-
-                    <div class="mini-container">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                            <img src="../img/IMG_7767.JPG" class="img" alt="Chambre de luxe">
-                        </a>
-                        <div class="somme">
-                            <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                            <p class="ancien-montant">2000.cfa</p>
-                        </div>
-                        <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                        <p class="nom-produit">habit complet...</p>
-                        <div class="note">
-                            <p><i class="fa-solid fa-star"></i>4,5</p>
-                            <p class="notes">734 notes</p>
-                        </div>
-                    </div>
-                    
-                    <div class="mini-container">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                            <img src="../img/IMG_7773.JPG" class="img" alt="Chambre de luxe">
-                        </a>
-                        <div class="somme">
-                            <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                            <p class="ancien-montant">2000.cfa</p>
-                        </div>
-                        <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                        <p class="nom-produit">habit complet...</p>
-                        <div class="note">
-                            <p><i class="fa-solid fa-star"></i>4,5</p>
-                            <p class="notes">734 notes</p>
-                        </div>
-                    </div>
-            
-                </div>
-            </section>
-
-            <section class="section-active" id="Berleti">
-                <h1 style="color: rgb(0, 0, 0); text-align: center; position: relative; top: 60px;">Berleti</h1>
-                <section class="container">
-
-                    <div class="mini-container">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                            <img src="../img/IMG_7744.JPG" class="img" alt="Chambre de luxe">
-                        </a>
-                        <div class="somme">
-                            <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                            <p class="ancien-montant">2000.cfa</p>
-                        </div>
-                        <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                        <p class="nom-produit">habit complet...</p>
-                        <div class="note">
-                            <p><i class="fa-solid fa-star"></i>4,5</p>
-                            <p class="notes">734 notes</p>
-                        </div>
-                    </div>
-
-                    <div class="mini-container">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                            <img src="../img/IMG_7756.JPG" class="img" alt="Chambre de luxe">
-                        </a>
-                        <div class="somme">
-                            <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                            <p class="ancien-montant">2000.cfa</p>
-                        </div>
-                        <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                        <p class="nom-produit">habit complet...</p>
-                        <div class="note">
-                            <p><i class="fa-solid fa-star"></i>4,5</p>
-                            <p class="notes">734 notes</p>
-                        </div>
-                    </div>
-                    
-                    <div class="mini-container">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                            <img src="../img/IMG_7758.JPG" class="img" alt="Chambre de luxe">
-                        </a>
-                        <div class="somme">
-                            <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                            <p class="ancien-montant">2000.cfa</p>
-                        </div>
-                        <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                        <p class="nom-produit">habit complet...</p>
-                        <div class="note">
-                            <p><i class="fa-solid fa-star"></i>4,5</p>
-                            <p class="notes">734 notes</p>
-                        </div>
-                    </div>
-                    
-                    <div class="mini-container">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                            <img src="../img/IMG_7762.JPG" class="img" alt="Chambre de luxe">
-                        </a>
-                        <div class="somme">
-                            <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                            <p class="ancien-montant">2000.cfa</p>
-                        </div>
-                        <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                        <p class="nom-produit">habit complet...</p>
-                        <div class="note">
-                            <p><i class="fa-solid fa-star"></i>4,5</p>
-                            <p class="notes">734 notes</p>
-                        </div>
-                    </div>
-                    
-                    <div class="mini-container">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                            <img src="../img/IMG_7770.JPG" class="img" alt="Chambre de luxe">
-                        </a>
-                        <div class="somme">
-                            <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                            <p class="ancien-montant">2000.cfa</p>
-                        </div>
-                        <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                        <p class="nom-produit">habit complet...</p>
-                        <div class="note">
-                            <p><i class="fa-solid fa-star"></i>4,5</p>
-                            <p class="notes">734 notes</p>
-                        </div>
-                    </div>
-
-                </section>
-
-                <section class="section-active" id="Chaussure">
-                    <h1 style="color: rgb(0, 0, 0); text-align: center; position: relative; top: 60px;">Chaussure</h1>
-                    <div class="container">
-
-                    <div class="mini-container">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                            <img src="../img/IMG_7748.JPG" class="img" alt="Chambre de luxe">
-                        </a>
-                        <div class="somme">
-                            <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                            <p class="ancien-montant">2000.cfa</p>
-                        </div>
-                        <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                        <p class="nom-produit">habit complet...</p>
-                        <div class="note">
-                            <p><i class="fa-solid fa-star"></i>4,5</p>
-                            <p class="notes">734 notes</p>
-                        </div>
-                    </div>
-                    
-                    <div class="mini-container">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                            <img src="../img/IMG_7729.JPG" class="img" alt="Chambre de luxe">
-                        </a>
-                        <div class="somme">
-                            <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                            <p class="ancien-montant">2000.cfa</p>
-                        </div>
-                        <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                        <p class="nom-produit">habit complet...</p>
-                        <div class="note">
-                            <p><i class="fa-solid fa-star"></i>4,5</p>
-                            <p class="notes">734 notes</p>
-                        </div>
-                    </div>
-                    
-                    <div class="mini-container">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                            <img src="../img/IMG_7731.JPG" class="img" alt="Chambre de luxe">
-                        </a>
-                        <div class="somme">
-                            <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                            <p class="ancien-montant">2000.cfa</p>
-                        </div>
-                        <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                        <p class="nom-produit">habit complet...</p>
-                        <div class="note">
-                            <p><i class="fa-solid fa-star"></i>4,5</p>
-                            <p class="notes">734 notes</p>
-                        </div>
-                    </div>
-                    
-                    <div class="mini-container">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                            <img src="../img/IMG_7732.JPG" class="img" alt="Chambre de luxe">
-                        </a>
-                        <div class="somme">
-                            <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                            <p class="ancien-montant">2000.cfa</p>
-                        </div>
-                        <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                        <p class="nom-produit">habit complet...</p>
-                        <div class="note">
-                            <p><i class="fa-solid fa-star"></i>4,5</p>
-                            <p class="notes">734 notes</p>
-                        </div>
-                    </div>
-                    
-                    <div class="mini-container">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                            <img src="../img/IMG_7736.JPG" class="img" alt="Chambre de luxe">
-                        </a>
-                        <div class="somme">
-                            <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                            <p class="ancien-montant">2000.cfa</p>
-                        </div>
-                        <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                        <p class="nom-produit">habit complet...</p>
-                        <div class="note">
-                            <p><i class="fa-solid fa-star"></i>4,5</p>
-                            <p class="notes">734 notes</p>
-                        </div>
-                    </div>
-                    
-                    <div class="mini-container">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                            <img src="../img/IMG_7747.JPG" class="img" alt="Chambre de luxe">
-                        </a>
-                        <div class="somme">
-                            <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                            <p class="ancien-montant">2000.cfa</p>
-                        </div>
-                        <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                        <p class="nom-produit">habit complet...</p>
-                        <div class="note">
-                            <p><i class="fa-solid fa-star"></i>4,5</p>
-                            <p class="notes">734 notes</p>
-                        </div>
-                    </div>
-                    
-                    <div class="mini-container">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                            <img src="../img/IMG_7769.JPG" class="img" alt="Chambre de luxe">
-                        </a>
-                        <div class="somme">
-                            <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                            <p class="ancien-montant">2000.cfa</p>
-                        </div>
-                        <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                        <p class="nom-produit">habit complet...</p>
-                        <div class="note">
-                            <p><i class="fa-solid fa-star"></i>4,5</p>
-                            <p class="notes">734 notes</p>
-                        </div>
-                    </div>
-                    
-                    <div class="mini-container">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                            <img src="../img/IMG_7754.JPG" class="img" alt="Chambre de luxe">
-                        </a>
-                        <div class="somme">
-                            <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                            <p class="ancien-montant">2000.cfa</p>
-                        </div>
-                        <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                        <p class="nom-produit">habit complet...</p>
-                        <div class="note">
-                            <p><i class="fa-solid fa-star"></i>4,5</p>
-                            <p class="notes">734 notes</p>
-                        </div>
-                    </div>
-                    
-                    <div class="mini-container">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                            <img src="../img/IMG_7765.JPG" class="img" alt="Chambre de luxe">
-                        </a>
-                        <div class="somme">
-                            <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                            <p class="ancien-montant">2000.cfa</p>
-                        </div>
-                        <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                        <p class="nom-produit">habit complet...</p>
-                        <div class="note">
-                            <p><i class="fa-solid fa-star"></i>4,5</p>
-                            <p class="notes">734 notes</p>
-                        </div>
-                    </div>
-                    
-                    <div class="mini-container">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                            <img src="../img/IMG_7766.JPG" class="img" alt="Chambre de luxe">
-                        </a>
-                        <div class="somme">
-                            <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                            <p class="ancien-montant">2000.cfa</p>
-                        </div>
-                        <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                        <p class="nom-produit">habit complet...</p>
-                        <div class="note">
-                            <p><i class="fa-solid fa-star"></i>4,5</p>
-                            <p class="notes">734 notes</p>
-                        </div>
-                    </div>
-                    
-                    <div class="mini-container">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                            <img src="../img/IMG_7780.JPG" class="img" alt="Chambre de luxe">
-                        </a>
-                        <div class="somme">
-                            <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                            <p class="ancien-montant">2000.cfa</p>
-                        </div>
-                        <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                        <p class="nom-produit">habit complet...</p>
-                        <div class="note">
-                            <p><i class="fa-solid fa-star"></i>4,5</p>
-                            <p class="notes">734 notes</p>
-                        </div>
-                    </div>
-                    
-                    <div class="mini-container">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                            <img src="../img/IMG_7775.JPG" class="img" alt="Chambre de luxe">
-                        </a>
-                        <div class="somme">
-                            <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                            <p class="ancien-montant">2000.cfa</p>
-                        </div>
-                        <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                        <p class="nom-produit">habit complet...</p>
-                        <div class="note">
-                            <p><i class="fa-solid fa-star"></i>4,5</p>
-                            <p class="notes">734 notes</p>
-                        </div>
-                    </div>
-                    
-
-            </section>
-
-
-
-            <section class="section-active" id="Draps">
-                <h1 style="color: rgb(0, 0, 0); text-align: center; position: relative; top: 60px;">Draps</h1>
-                <div class="container">
-                
-                <div class="mini-container">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                        <img src="../img/IMG_7730.JPG" class="img" alt="Chambre de luxe">
-                    </a>
-                    <div class="somme">
-                        <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                        <p class="ancien-montant">2000.cfa</p>
-                    </div>
-                    <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                    <p class="nom-produit">habit complet...</p>
-                    <div class="note">
-                        <p><i class="fa-solid fa-star"></i>4,5</p>
-                        <p class="notes">734 notes</p>
-                    </div>
-                </div>
-
-                <div class="mini-container">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                        <img src="../img/IMG_7778.JPG" class="img" alt="Chambre de luxe">
-                    </a>
-                    <div class="somme">
-                        <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                        <p class="ancien-montant">2000.cfa</p>
-                    </div>
-                    <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                    <p class="nom-produit">habit complet...</p>
-                    <div class="note">
-                        <p><i class="fa-solid fa-star"></i>4,5</p>
-                        <p class="notes">734 notes</p>
-                    </div>
-                </div>
-                
-                <div class="mini-container">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                        <img src="../img/IMG_7714.JPG" class="img" alt="Chambre de luxe">
-                    </a>
-                    <div class="somme">
-                        <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                        <p class="ancien-montant">2000.cfa</p>
-                    </div>
-                    <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                    <p class="nom-produit">habit complet...</p>
-                    <div class="note">
-                        <p><i class="fa-solid fa-star"></i>4,5</p>
-                        <p class="notes">734 notes</p>
-                    </div>
-                </div>
-                
-                <div class="mini-container">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                        <img src="../img/IMG_7734.JPG" class="img" alt="Chambre de luxe">
-                    </a>
-                    <div class="somme">
-                        <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                        <p class="ancien-montant">2000.cfa</p>
-                    </div>
-                    <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                    <p class="nom-produit">habit complet...</p>
-                    <div class="note">
-                        <p><i class="fa-solid fa-star"></i>4,5</p>
-                        <p class="notes">734 notes</p>
-                    </div>
-                </div>
-                
-                <div class="mini-container">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                        <img src="../img/IMG_7737.JPG" class="img" alt="Chambre de luxe">
-                    </a>
-                    <div class="somme">
-                        <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                        <p class="ancien-montant">2000.cfa</p>
-                    </div>
-                    <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                    <p class="nom-produit">habit complet...</p>
-                    <div class="note">
-                        <p><i class="fa-solid fa-star"></i>4,5</p>
-                        <p class="notes">734 notes</p>
-                    </div>
-                </div>
-                
-                <div class="mini-container">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                        <img src="../img/IMG_7741.JPG" class="img" alt="Chambre de luxe">
-                    </a>
-                    <div class="somme">
-                        <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                        <p class="ancien-montant">2000.cfa</p>
-                    </div>
-                    <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                    <p class="nom-produit">habit complet...</p>
-                    <div class="note">
-                        <p><i class="fa-solid fa-star"></i>4,5</p>
-                        <p class="notes">734 notes</p>
-                    </div>
-                </div>
-                
-                <div class="mini-container">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                        <img src="../img/IMG_7763.JPG" class="img" alt="Chambre de luxe">
-                    </a>
-                    <div class="somme">
-                        <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                        <p class="ancien-montant">2000.cfa</p>
-                    </div>
-                    <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                    <p class="nom-produit">habit complet...</p>
-                    <div class="note">
-                        <p><i class="fa-solid fa-star"></i>4,5</p>
-                        <p class="notes">734 notes</p>
-                    </div>
-                </div>
-
-            </section>
-                
-
-            <section class="section-active" id="Rideaux">
-                <h1 style="color: rgb(0, 0, 0); text-align: center; position: relative; top: 60px;">Rideaux</h1>
-                <div class="container">
-
-                <div class="mini-container">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <a href="../html/product-detail.html" style="text-decoration: dashed;">
-                        <img src="../img/IMG_7759.JPG" class="img" alt="Chambre de luxe">
-                    </a>
-                    <div class="somme">
-                        <p class="montant"><i class="fa-solid fa-wallet"></i> 300.cfa</p>
-                        <p class="ancien-montant">2000.cfa</p>
-                    </div>
-                    <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
-                    <p class="nom-produit">habit complet...</p>
-                    <div class="note">
-                        <p><i class="fa-solid fa-star"></i>4,5</p>
-                        <p class="notes">734 notes</p>
-                    </div>
-                </div>
-
-            </section>
-
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>EMA-Services</h3>
-                    <p>Votre plateforme de services tout-en-un</p>
-                </div>
-                <!-- <div class="footer-section">
-                <h4>Services</h4>
-                <ul>
-                    <li><a href="#">Transport</a></li>
-                    <li><a href="#">Livraison</a></li>
-                    <li><a href="#">Restaurants</a></li>
-                    <li><a href="#">Hôtels</a></li>
-                    <li><a href="#">Boutiques</a></li>
-                </ul>
-            </div> -->
-                <div class="footer-section">
-                    <h4>Contact</h4>
-                    <p><i class="fas fa-phone"></i> +242 XXX XX XX XX</p>
-                    <p><i class="fas fa-envelope"></i> contact@ema-services.com</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Suivez-nous</h4>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#"><i class="fab fa-telegram"></i></a>
-                        <a href="#"><i class="fab fa-tiktok"></i></a>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
+                <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
+                <p class="nom-produit">Pagne traditionnel</p>
+                <div class="note">
+                    <p><i class="fa-solid fa-star"></i> 4,5</p>
+                    <p class="notes">734 notes</p>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; Nous sommes pret a vous servir.</p>
-            </div>
-        </footer>
 
+            <!-- Produit 2 -->
+            <div class="mini-container">
+                <i class="fa-solid fa-cart-shopping" title="Ajouter au panier"></i>
+                <a href="../html/product-detail.html" style="text-decoration: none;">
+                    <img src="../img/IMG_7751.JPG" class="img" alt="Ensemble pagne - Habit complet">
+                </a>
+                <div class="somme">
+                    <p class="montant"><i class="fa-solid fa-wallet"></i> 300 cfa</p>
+                    <p class="ancien-montant">2000 cfa</p>
+                </div>
+                <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
+                <p class="nom-produit">Ensemble pagne</p>
+                <div class="note">
+                    <p><i class="fa-solid fa-star"></i> 4,5</p>
+                    <p class="notes">734 notes</p>
+                </div>
+            </div>
+
+            <!-- Produit 3 -->
+            <div class="mini-container">
+                <i class="fa-solid fa-cart-shopping" title="Ajouter au panier"></i>
+                <a href="../html/product-detail.html" style="text-decoration: none;">
+                    <img src="../img/IMG_7725.JPG" class="img" alt="Pagne tissé - Habit complet">
+                </a>
+                <div class="somme">
+                    <p class="montant"><i class="fa-solid fa-wallet"></i> 300 cfa</p>
+                    <p class="ancien-montant">2000 cfa</p>
+                </div>
+                <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
+                <p class="nom-produit">Pagne tissé</p>
+                <div class="note">
+                    <p><i class="fa-solid fa-star"></i> 4,5</p>
+                    <p class="notes">734 notes</p>
+                </div>
+            </div>
+
+            <!-- Produit 4 -->
+            <div class="mini-container">
+                <i class="fa-solid fa-cart-shopping" title="Ajouter au panier"></i>
+                <a href="../html/product-detail.html" style="text-decoration: none;">
+                    <img src="../img/IMG_7743.JPG" class="img" alt="Pagne imprimé - Habit complet">
+                </a>
+                <div class="somme">
+                    <p class="montant"><i class="fa-solid fa-wallet"></i> 300 cfa</p>
+                    <p class="ancien-montant">2000 cfa</p>
+                </div>
+                <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
+                <p class="nom-produit">Pagne imprimé</p>
+                <div class="note">
+                    <p><i class="fa-solid fa-star"></i> 4,5</p>
+                    <p class="notes">734 notes</p>
+                </div>
+            </div>
+
+            <!-- Produit 5 -->
+            <div class="mini-container">
+                <i class="fa-solid fa-cart-shopping" title="Ajouter au panier"></i>
+                <a href="../html/product-detail.html" style="text-decoration: none;">
+                    <img src="../img/IMG_7720.JPG" class="img" alt="Page moderne - Habit complet">
+                </a>
+                <div class="somme">
+                    <p class="montant"><i class="fa-solid fa-wallet"></i> 300 cfa</p>
+                    <p class="ancien-montant">2000 cfa</p>
+                </div>
+                <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
+                <p class="nom-produit">Pagne moderne</p>
+                <div class="note">
+                    <p><i class="fa-solid fa-star"></i> 4,5</p>
+                    <p class="notes">734 notes</p>
+                </div>
+            </div>
+
+            <!-- Produit 6 -->
+            <div class="mini-container">
+                <i class="fa-solid fa-cart-shopping" title="Ajouter au panier"></i>
+                <a href="../html/product-detail.html" style="text-decoration: none;">
+                    <img src="../img/IMG_7723.JPG" class="img" alt="Pagne cérémonie - Habit complet">
+                </a>
+                <div class="somme">
+                    <p class="montant"><i class="fa-solid fa-wallet"></i> 300 cfa</p>
+                    <p class="ancien-montant">2000 cfa</p>
+                </div>
+                <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
+                <p class="nom-produit">Pagne de cérémonie</p>
+                <div class="note">
+                    <p><i class="fa-solid fa-star"></i> 4,5</p>
+                    <p class="notes">734 notes</p>
+                </div>
+            </div>
+
+            <!-- Produit 7 -->
+            <div class="mini-container">
+                <i class="fa-solid fa-cart-shopping" title="Ajouter au panier"></i>
+                <a href="../html/product-detail.html" style="text-decoration: none;">
+                    <img src="../img/IMG_7724.JPG" class="img" alt="Pagne wax - Habit complet">
+                </a>
+                <div class="somme">
+                    <p class="montant"><i class="fa-solid fa-wallet"></i> 300 cfa</p>
+                    <p class="ancien-montant">2000 cfa</p>
+                </div>
+                <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
+                <p class="nom-produit">Pagne wax</p>
+                <div class="note">
+                    <p><i class="fa-solid fa-star"></i> 4,5</p>
+                    <p class="notes">734 notes</p>
+                </div>
+            </div>
+
+            <!-- Produit 8 -->
+            <div class="mini-container">
+                <i class="fa-solid fa-cart-shopping" title="Ajouter au panier"></i>
+                <a href="../html/product-detail.html" style="text-decoration: none;">
+                    <img src="../img/IMG_7725.JPG" class="img" alt="Pagne classique - Habit complet">
+                </a>
+                <div class="somme">
+                    <p class="montant"><i class="fa-solid fa-wallet"></i> 300 cfa</p>
+                    <p class="ancien-montant">2000 cfa</p>
+                </div>
+                <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
+                <p class="nom-produit">Pagne classique</p>
+                <div class="note">
+                    <p><i class="fa-solid fa-star"></i> 4,5</p>
+                    <p class="notes">734 notes</p>
+                </div>
+            </div>
+
+            <!-- Produit 9 -->
+            <div class="mini-container">
+                <i class="fa-solid fa-cart-shopping" title="Ajouter au panier"></i>
+                <a href="../html/product-detail.html" style="text-decoration: none;">
+                    <img src="../img/IMG_7728.JPG" class="img" alt="Pagne fantaisie - Habit complet">
+                </a>
+                <div class="somme">
+                    <p class="montant"><i class="fa-solid fa-wallet"></i> 300 cfa</p>
+                    <p class="ancien-montant">2000 cfa</p>
+                </div>
+                <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
+                <p class="nom-produit">Pagne fantaisie</p>
+                <div class="note">
+                    <p><i class="fa-solid fa-star"></i> 4,5</p>
+                    <p class="notes">734 notes</p>
+                </div>
+            </div>
+
+            <!-- Produit 10 -->
+            <div class="mini-container">
+                <i class="fa-solid fa-cart-shopping" title="Ajouter au panier"></i>
+                <a href="../html/product-detail.html" style="text-decoration: none;">
+                    <img src="../img/IMG_7735.JPG" class="img" alt="Pagne brodé - Habit complet">
+                </a>
+                <div class="somme">
+                    <p class="montant"><i class="fa-solid fa-wallet"></i> 300 cfa</p>
+                    <p class="ancien-montant">2000 cfa</p>
+                </div>
+                <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
+                <p class="nom-produit">Pagne brodé</p>
+                <div class="note">
+                    <p><i class="fa-solid fa-star"></i> 4,5</p>
+                    <p class="notes">734 notes</p>
+                </div>
+            </div>
+
+            <!-- Produit 11 -->
+            <div class="mini-container">
+                <i class="fa-solid fa-cart-shopping" title="Ajouter au panier"></i>
+                <a href="../html/product-detail.html" style="text-decoration: none;">
+                    <img src="../img/IMG_7710.JPG" class="img" alt="Pagne africain - Habit complet">
+                </a>
+                <div class="somme">
+                    <p class="montant"><i class="fa-solid fa-wallet"></i> 300 cfa</p>
+                    <p class="ancien-montant">2000 cfa</p>
+                </div>
+                <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
+                <p class="nom-produit">Pagne africain</p>
+                <div class="note">
+                    <p><i class="fa-solid fa-star"></i> 4,5</p>
+                    <p class="notes">734 notes</p>
+                </div>
+            </div>
+
+            <!-- Produit 12 -->
+            <div class="mini-container">
+                <i class="fa-solid fa-cart-shopping" title="Ajouter au panier"></i>
+                <a href="../html/product-detail.html" style="text-decoration: none;">
+                    <img src="../img/IMG_7711.JPG" class="img" alt="Pagne de luxe - Habit complet">
+                </a>
+                <div class="somme">
+                    <p class="montant"><i class="fa-solid fa-wallet"></i> 300 cfa</p>
+                    <p class="ancien-montant">2000 cfa</p>
+                </div>
+                <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
+                <p class="nom-produit">Pagne de luxe</p>
+                <div class="note">
+                    <p><i class="fa-solid fa-star"></i> 4,5</p>
+                    <p class="notes">734 notes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Sac à main -->
+    <section class="section-active" id="Sac">
+        <h1 style="color: rgb(0, 0, 0); text-align: center; position: relative; top: 60px;">Sac à main</h1>
+        <div class="container">
+            <!-- Produits sacs (conservé mais condensé pour la lisibilité) -->
+            <div class="mini-container">
+                <i class="fa-solid fa-cart-shopping" title="Ajouter au panier"></i>
+                <a href="../html/product-detail.html" style="text-decoration: none;">
+                    <img src="../img/IMG_7782.JPG" class="img" alt="Sac à main élégant">
+                </a>
+                <div class="somme">
+                    <p class="montant"><i class="fa-solid fa-wallet"></i> 300 cfa</p>
+                    <p class="ancien-montant">2000 cfa</p>
+                </div>
+                <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
+                <p class="nom-produit">Sac à main</p>
+                <div class="note">
+                    <p><i class="fa-solid fa-star"></i> 4,5</p>
+                    <p class="notes">734 notes</p>
+                </div>
+            </div>
+
+            <div class="mini-container">
+                <i class="fa-solid fa-cart-shopping" title="Ajouter au panier"></i>
+                <a href="../html/product-detail.html" style="text-decoration: none;">
+                    <img src="../img/IMG_7783.JPG" class="img" alt="Sac bandoulière">
+                </a>
+                <div class="somme">
+                    <p class="montant"><i class="fa-solid fa-wallet"></i> 300 cfa</p>
+                    <p class="ancien-montant">2000 cfa</p>
+                </div>
+                <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
+                <p class="nom-produit">Sac bandoulière</p>
+                <div class="note">
+                    <p><i class="fa-solid fa-star"></i> 4,5</p>
+                    <p class="notes">734 notes</p>
+                </div>
+            </div>
+
+            <div class="mini-container">
+                <i class="fa-solid fa-cart-shopping" title="Ajouter au panier"></i>
+                <a href="../html/product-detail.html" style="text-decoration: none;">
+                    <img src="../img/IMG_7784.JPG" class="img" alt="Sac en cuir">
+                </a>
+                <div class="somme">
+                    <p class="montant"><i class="fa-solid fa-wallet"></i> 300 cfa</p>
+                    <p class="ancien-montant">2000 cfa</p>
+                </div>
+                <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
+                <p class="nom-produit">Sac en cuir</p>
+                <div class="note">
+                    <p><i class="fa-solid fa-star"></i> 4,5</p>
+                    <p class="notes">734 notes</p>
+                </div>
+            </div>
+
+            <div class="mini-container">
+                <i class="fa-solid fa-cart-shopping" title="Ajouter au panier"></i>
+                <a href="../html/product-detail.html" style="text-decoration: none;">
+                    <img src="../img/IMG_7764.JPG" class="img" alt="Sac à main tendance">
+                </a>
+                <div class="somme">
+                    <p class="montant"><i class="fa-solid fa-wallet"></i> 300 cfa</p>
+                    <p class="ancien-montant">2000 cfa</p>
+                </div>
+                <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
+                <p class="nom-produit">Sac tendance</p>
+                <div class="note">
+                    <p><i class="fa-solid fa-star"></i> 4,5</p>
+                    <p class="notes">734 notes</p>
+                </div>
+            </div>
+
+            <div class="mini-container">
+                <i class="fa-solid fa-cart-shopping" title="Ajouter au panier"></i>
+                <a href="../html/product-detail.html" style="text-decoration: none;">
+                    <img src="../img/IMG_7768.JPG" class="img" alt="Sac à main chic">
+                </a>
+                <div class="somme">
+                    <p class="montant"><i class="fa-solid fa-wallet"></i> 300 cfa</p>
+                    <p class="ancien-montant">2000 cfa</p>
+                </div>
+                <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
+                <p class="nom-produit">Sac chic</p>
+                <div class="note">
+                    <p><i class="fa-solid fa-star"></i> 4,5</p>
+                    <p class="notes">734 notes</p>
+                </div>
+            </div>
+
+            <div class="mini-container">
+                <i class="fa-solid fa-cart-shopping" title="Ajouter au panier"></i>
+                <a href="../html/product-detail.html" style="text-decoration: none;">
+                    <img src="../img/IMG_7772.JPG" class="img" alt="Pochette femme">
+                </a>
+                <div class="somme">
+                    <p class="montant"><i class="fa-solid fa-wallet"></i> 300 cfa</p>
+                    <p class="ancien-montant">2000 cfa</p>
+                </div>
+                <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
+                <p class="nom-produit">Pochette</p>
+                <div class="note">
+                    <p><i class="fa-solid fa-star"></i> 4,5</p>
+                    <p class="notes">734 notes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Lacoste -->
+    <section class="section-active" id="Lacoste">
+        <h1 style="color: rgb(0, 0, 0); text-align: center; position: relative; top: 60px;">Lacoste</h1>
+        <div class="container">
+            <div class="mini-container">
+                <i class="fa-solid fa-cart-shopping" title="Ajouter au panier"></i>
+                <a href="../html/product-detail.html" style="text-decoration: none;">
+                    <img src="../img/IMG_7733.JPG" class="img" alt="Polos Lacoste">
+                </a>
+                <div class="somme">
+                    <p class="montant"><i class="fa-solid fa-wallet"></i> 300 cfa</p>
+                    <p class="ancien-montant">2000 cfa</p>
+                </div>
+                <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
+                <p class="nom-produit">Polo Lacoste</p>
+                <div class="note">
+                    <p><i class="fa-solid fa-star"></i> 4,5</p>
+                    <p class="notes">734 notes</p>
+                </div>
+            </div>
+
+            <div class="mini-container">
+                <i class="fa-solid fa-cart-shopping" title="Ajouter au panier"></i>
+                <a href="../html/product-detail.html" style="text-decoration: none;">
+                    <img src="../img/IMG_7716.JPG" class="img" alt="T-shirt Lacoste">
+                </a>
+                <div class="somme">
+                    <p class="montant"><i class="fa-solid fa-wallet"></i> 300 cfa</p>
+                    <p class="ancien-montant">2000 cfa</p>
+                </div>
+                <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
+                <p class="nom-produit">T-shirt Lacoste</p>
+                <div class="note">
+                    <p><i class="fa-solid fa-star"></i> 4,5</p>
+                    <p class="notes">734 notes</p>
+                </div>
+            </div>
+
+            <div class="mini-container">
+                <i class="fa-solid fa-cart-shopping" title="Ajouter au panier"></i>
+                <a href="../html/product-detail.html" style="text-decoration: none;">
+                    <img src="../img/IMG_7721.JPG" class="img" alt="Survêtement Lacoste">
+                </a>
+                <div class="somme">
+                    <p class="montant"><i class="fa-solid fa-wallet"></i> 300 cfa</p>
+                    <p class="ancien-montant">2000 cfa</p>
+                </div>
+                <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
+                <p class="nom-produit">Survêtement Lacoste</p>
+                <div class="note">
+                    <p><i class="fa-solid fa-star"></i> 4,5</p>
+                    <p class="notes">734 notes</p>
+                </div>
+            </div>
+
+            <div class="mini-container">
+                <i class="fa-solid fa-cart-shopping" title="Ajouter au panier"></i>
+                <a href="../html/product-detail.html" style="text-decoration: none;">
+                    <img src="../img/IMG_7722.JPG" class="img" alt="Short Lacoste">
+                </a>
+                <div class="somme">
+                    <p class="montant"><i class="fa-solid fa-wallet"></i> 300 cfa</p>
+                    <p class="ancien-montant">2000 cfa</p>
+                </div>
+                <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
+                <p class="nom-produit">Short Lacoste</p>
+                <div class="note">
+                    <p><i class="fa-solid fa-star"></i> 4,5</p>
+                    <p class="notes">734 notes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Tish-short -->
+    <section class="section-active" id="Tish-short">
+        <h1 style="color: rgb(0, 0, 0); text-align: center; position: relative; top: 60px;">Tish-short</h1>
+        <div class="container">
+            <div class="mini-container">
+                <i class="fa-solid fa-cart-shopping" title="Ajouter au panier"></i>
+                <a href="../html/product-detail.html" style="text-decoration: none;">
+                    <img src="../img/IMG_7755.JPG" class="img" alt="T-shirt décontracté">
+                </a>
+                <div class="somme">
+                    <p class="montant"><i class="fa-solid fa-wallet"></i> 300 cfa</p>
+                    <p class="ancien-montant">2000 cfa</p>
+                </div>
+                <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
+                <p class="nom-produit">T-shirt décontracté</p>
+                <div class="note">
+                    <p><i class="fa-solid fa-star"></i> 4,5</p>
+                    <p class="notes">734 notes</p>
+                </div>
+            </div>
+
+            <div class="mini-container">
+                <i class="fa-solid fa-cart-shopping" title="Ajouter au panier"></i>
+                <a href="../html/product-detail.html" style="text-decoration: none;">
+                    <img src="../img/IMG_7745.JPG" class="img" alt="T-shirt imprimé">
+                </a>
+                <div class="somme">
+                    <p class="montant"><i class="fa-solid fa-wallet"></i> 300 cfa</p>
+                    <p class="ancien-montant">2000 cfa</p>
+                </div>
+                <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
+                <p class="nom-produit">T-shirt imprimé</p>
+                <div class="note">
+                    <p><i class="fa-solid fa-star"></i> 4,5</p>
+                    <p class="notes">734 notes</p>
+                </div>
+            </div>
+
+            <div class="mini-container">
+                <i class="fa-solid fa-cart-shopping" title="Ajouter au panier"></i>
+                <a href="../html/product-detail.html" style="text-decoration: none;">
+                    <img src="../img/IMG_7746.JPG" class="img" alt="T-shirt basique">
+                </a>
+                <div class="somme">
+                    <p class="montant"><i class="fa-solid fa-wallet"></i> 300 cfa</p>
+                    <p class="ancien-montant">2000 cfa</p>
+                </div>
+                <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
+                <p class="nom-produit">T-shirt basique</p>
+                <div class="note">
+                    <p><i class="fa-solid fa-star"></i> 4,5</p>
+                    <p class="notes">734 notes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Serviette (anciennement Survertte) -->
+    <section class="section-active" id="Serviette">
+        <h1 style="color: rgb(0, 0, 0); text-align: center; position: relative; top: 60px;">Serviette</h1>
+        <div class="container">
+            <div class="mini-container">
+                <i class="fa-solid fa-cart-shopping" title="Ajouter au panier"></i>
+                <a href="../html/product-detail.html" style="text-decoration: none;">
+                    <img src="../img/IMG_7759.JPG" class="img" alt="Serviette de bain">
+                </a>
+                <div class="somme">
+                    <p class="montant"><i class="fa-solid fa-wallet"></i> 300 cfa</p>
+                    <p class="ancien-montant">2000 cfa</p>
+                </div>
+                <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
+                <p class="nom-produit">Serviette de bain</p>
+                <div class="note">
+                    <p><i class="fa-solid fa-star"></i> 4,5</p>
+                    <p class="notes">734 notes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Berleti -->
+    <section class="section-active" id="Berleti">
+        <h1 style="color: rgb(0, 0, 0); text-align: center; position: relative; top: 60px;">Berleti</h1>
+        <div class="container">
+            <div class="mini-container">
+                <i class="fa-solid fa-cart-shopping" title="Ajouter au panier"></i>
+                <a href="../html/product-detail.html" style="text-decoration: none;">
+                    <img src="../img/IMG_7744.JPG" class="img" alt="Berret élégant">
+                </a>
+                <div class="somme">
+                    <p class="montant"><i class="fa-solid fa-wallet"></i> 300 cfa</p>
+                    <p class="ancien-montant">2000 cfa</p>
+                </div>
+                <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
+                <p class="nom-produit">Berret élégant</p>
+                <div class="note">
+                    <p><i class="fa-solid fa-star"></i> 4,5</p>
+                    <p class="notes">734 notes</p>
+                </div>
+            </div>
+
+            <div class="mini-container">
+                <i class="fa-solid fa-cart-shopping" title="Ajouter au panier"></i>
+                <a href="../html/product-detail.html" style="text-decoration: none;">
+                    <img src="../img/IMG_7756.JPG" class="img" alt="Berret classique">
+                </a>
+                <div class="somme">
+                    <p class="montant"><i class="fa-solid fa-wallet"></i> 300 cfa</p>
+                    <p class="ancien-montant">2000 cfa</p>
+                </div>
+                <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
+                <p class="nom-produit">Berret classique</p>
+                <div class="note">
+                    <p><i class="fa-solid fa-star"></i> 4,5</p>
+                    <p class="notes">734 notes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Chaussure -->
+    <section class="section-active" id="Chaussure">
+        <h1 style="color: rgb(0, 0, 0); text-align: center; position: relative; top: 60px;">Chaussure</h1>
+        <div class="container">
+            <div class="mini-container">
+                <i class="fa-solid fa-cart-shopping" title="Ajouter au panier"></i>
+                <a href="../html/product-detail.html" style="text-decoration: none;">
+                    <img src="../img/IMG_7748.JPG" class="img" alt="Chaussures tendance">
+                </a>
+                <div class="somme">
+                    <p class="montant"><i class="fa-solid fa-wallet"></i> 300 cfa</p>
+                    <p class="ancien-montant">2000 cfa</p>
+                </div>
+                <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
+                <p class="nom-produit">Chaussures tendance</p>
+                <div class="note">
+                    <p><i class="fa-solid fa-star"></i> 4,5</p>
+                    <p class="notes">734 notes</p>
+                </div>
+            </div>
+
+            <div class="mini-container">
+                <i class="fa-solid fa-cart-shopping" title="Ajouter au panier"></i>
+                <a href="../html/product-detail.html" style="text-decoration: none;">
+                    <img src="../img/IMG_7729.JPG" class="img" alt="Chaussures sport">
+                </a>
+                <div class="somme">
+                    <p class="montant"><i class="fa-solid fa-wallet"></i> 300 cfa</p>
+                    <p class="ancien-montant">2000 cfa</p>
+                </div>
+                <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
+                <p class="nom-produit">Chaussures sport</p>
+                <div class="note">
+                    <p><i class="fa-solid fa-star"></i> 4,5</p>
+                    <p class="notes">734 notes</p>
+                </div>
+            </div>
+
+            <div class="mini-container">
+                <i class="fa-solid fa-cart-shopping" title="Ajouter au panier"></i>
+                <a href="../html/product-detail.html" style="text-decoration: none;">
+                    <img src="../img/IMG_7731.JPG" class="img" alt="Chaussures habillées">
+                </a>
+                <div class="somme">
+                    <p class="montant"><i class="fa-solid fa-wallet"></i> 300 cfa</p>
+                    <p class="ancien-montant">2000 cfa</p>
+                </div>
+                <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
+                <p class="nom-produit">Chaussures habillées</p>
+                <div class="note">
+                    <p><i class="fa-solid fa-star"></i> 4,5</p>
+                    <p class="notes">734 notes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Draps -->
+    <section class="section-active" id="Draps">
+        <h1 style="color: rgb(0, 0, 0); text-align: center; position: relative; top: 60px;">Draps</h1>
+        <div class="container">
+            <div class="mini-container">
+                <i class="fa-solid fa-cart-shopping" title="Ajouter au panier"></i>
+                <a href="../html/product-detail.html" style="text-decoration: none;">
+                    <img src="../img/IMG_7730.JPG" class="img" alt="Draps en satin">
+                </a>
+                <div class="somme">
+                    <p class="montant"><i class="fa-solid fa-wallet"></i> 300 cfa</p>
+                    <p class="ancien-montant">2000 cfa</p>
+                </div>
+                <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
+                <p class="nom-produit">Draps en satin</p>
+                <div class="note">
+                    <p><i class="fa-solid fa-star"></i> 4,5</p>
+                    <p class="notes">734 notes</p>
+                </div>
+            </div>
+
+            <div class="mini-container">
+                <i class="fa-solid fa-cart-shopping" title="Ajouter au panier"></i>
+                <a href="../html/product-detail.html" style="text-decoration: none;">
+                    <img src="../img/IMG_7778.JPG" class="img" alt="Draps imprimés">
+                </a>
+                <div class="somme">
+                    <p class="montant"><i class="fa-solid fa-wallet"></i> 300 cfa</p>
+                    <p class="ancien-montant">2000 cfa</p>
+                </div>
+                <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
+                <p class="nom-produit">Draps imprimés</p>
+                <div class="note">
+                    <p><i class="fa-solid fa-star"></i> 4,5</p>
+                    <p class="notes">734 notes</p>
+                </div>
+            </div>
+
+            <div class="mini-container">
+                <i class="fa-solid fa-cart-shopping" title="Ajouter au panier"></i>
+                <a href="../html/product-detail.html" style="text-decoration: none;">
+                    <img src="../img/IMG_7714.JPG" class="img" alt="Draps unis">
+                </a>
+                <div class="somme">
+                    <p class="montant"><i class="fa-solid fa-wallet"></i> 300 cfa</p>
+                    <p class="ancien-montant">2000 cfa</p>
+                </div>
+                <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
+                <p class="nom-produit">Draps unis</p>
+                <div class="note">
+                    <p><i class="fa-solid fa-star"></i> 4,5</p>
+                    <p class="notes">734 notes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Rideaux -->
+    <section class="section-active" id="Rideaux">
+        <h1 style="color: rgb(0, 0, 0); text-align: center; position: relative; top: 60px;">Rideaux</h1>
+        <div class="container">
+            <div class="mini-container">
+                <i class="fa-solid fa-cart-shopping" title="Ajouter au panier"></i>
+                <a href="../html/product-detail.html" style="text-decoration: none;">
+                    <img src="../img/IMG_7759.JPG" class="img" alt="Rideaux élégants">
+                </a>
+                <div class="somme">
+                    <p class="montant"><i class="fa-solid fa-wallet"></i> 300 cfa</p>
+                    <p class="ancien-montant">2000 cfa</p>
+                </div>
+                <p class="nom-boutique"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
+                <p class="nom-produit">Rideaux</p>
+                <div class="note">
+                    <p><i class="fa-solid fa-star"></i> 4,5</p>
+                    <p class="notes">734 notes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>EMA-Services</h3>
+                <p>Votre plateforme de services tout-en-un</p>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p><i class="fas fa-phone"></i> <a href="06 948 10 94">+242 06 948 10 94 </a></p>
+                <p><i class="fas fa-envelope"></i> contact@ema-services.com</p>
+            </div>
+            <div class="footer-section">
+                <h4>Suivez-nous</h4>
+                <div class="social-links">
+                    <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 - Nous sommes prêts à vous servir.</p>
+        </div>
+    </footer>
+
+    <!-- Script pour masquer le chargement -->
+    <script>
+        window.addEventListener('load', function () {
+            document.getElementById('loading').style.display = 'none';
+        });
+
+        // Smooth scroll pour la navigation par catégorie
+        document.getElementById('choix').addEventListener('change', function (e) {
+            const targetId = e.target.value;
+            if (targetId) {
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+        });
+    </script>
 </body>
 
 </html>
