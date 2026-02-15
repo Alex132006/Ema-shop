@@ -265,7 +265,7 @@ h2 {
 .fa-wallet,
 .montant {
     color: #c06600;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: bold;
     background: none;
 }
@@ -277,7 +277,7 @@ h2 {
 .ancien-montant {
     color: rgb(125, 125, 125);
     text-decoration: line-through;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: bold;
     position: relative;
     top: 3px;
