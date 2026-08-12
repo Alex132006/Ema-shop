@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Pagne traditionnel - Ema-Shop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700;1,900&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600;1,700&family=Lora:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+    <link rel="icon" href="../images/alex.jpg" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../images/alex.jpg">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="../css/Ema-shop.css">
+    <style>
+        .detail-container {
+            max-width: 1200px;
+            margin: 100px auto 40px;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+
+        @media (min-width: 768px) {
+            .detail-container {
+                grid-template-columns: 1fr 1fr;
+                gap: 60px;
+                padding: 40px;
+            }
+        }
+
+        .product-image-section {
+            position: relative;
+        }
+
+        .product-image-main {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+            object-fit: cover;
+            margin: 0 auto;
+            display: block;
+        }
+
+        .product-info-section {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .product-shop {
+            color: #005eff;
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .product-title {
+            font-size: 28px;
+            font-weight: 700;
+            color: #000;
+            line-height: 1.3;
+        }
+
+        @media (min-width: 768px) {
+            .product-title {
+                font-size: 36px;
+            }
+        }
+
+        .product-rating {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #9d7900;
+            font-size: 16px;
+        }
+
+        .product-rating span {
+            color: #8b8b8b;
+            font-size: 14px;
+        }
+
+        .product-price {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .price-current {
+            font-size: 32px;
+            font-weight: 700;
+            color: #c06600;
+        }
+
+        .price-old {
+            font-size: 20px;
+            color: #888;
+            text-decoration: line-through;
+        }
+
+        .product-description {
+            color: #555;
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        .quantity-section {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .quantity-label {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .quantity-controls {
+            display: flex;
+            align-items: center;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .quantity-btn {
+            background: #f5f5f5;
+            border: none;
+            width: 40px;
+            height: 40px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            color: #333;
+        }
+
+        .quantity-btn:hover {
+            background: #e0e0e0;
+        }
+
+        .quantity-value {
+            width: 50px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .add-to-cart-btn {
+            background: #000;
+            color: white;
+            border: none;
+            padding: 18px 40px;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+            width: 100%;
+            max-width: 300px;
+        }
+
+        .add-to-cart-btn:hover {
+            background: #333;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: #333;
+            text-decoration: none;
+            font-weight: 600;
+            margin-bottom: 20px;
+            transition: color 0.3s ease;
+        }
+
+        .back-btn:hover {
+            color: #c06600;
+        }
+
+        .notification {
+            position: fixed;
+            top: 80px;
+            right: 20px;
+            background: #28a745;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+            z-index: 2000;
+            display: none;
+            animation: slideIn 0.3s ease;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="notification" id="notification">
+        <i class="fa-solid fa-check-circle"></i> Produit ajouté au panier !
+    </div>
+
+    <div class="container-categorie">
+        <a href="../html/Ema-shop.html" class="back-btn" style="text-decoration: none; color: #fff;">
+            <!-- <i class="fa-solid fa-arrow-left"></i> Retour -->
+        </a>
+        <h2><i class="fas fa-shop"></i> EMA-Shop</h2>
+        <div class="container-point">
+            <a href="../html/Pannier.html" title="Panier" style="text-decoration: none; color: #fff;">
+                <i class="fa-solid fa-shopping-cart"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="detail-container">
+        <div class="product-image-section">
+            <img src="../img-ema/5341318804048387502.jpg" alt="Pagne traditionnel" class="product-image-main">
+        </div>
+
+        <div class="product-info-section">
+            <p class="product-shop"><i class="fa-solid fa-certificate"></i> Ema's Shop</p>
+            <h1 class="product-title">Pagne traditionnel</h1>
+            <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <span>4,5 (734 notes)</span>
+            </div>
+            <div class="product-price">
+                <span class="price-current"><i class="fa-solid fa-wallet"></i> 13.000 cfa</span>
+                <span class="price-old">15.000 cfa</span>
+            </div>
+            <p class="product-description">
+                Découvrez notre pagne traditionnel de haute qualité, confectionné avec soin pour allier confort et élégance. 
+                Ce vêtement authentique est parfait pour toutes les occasions, qu'il s'agisse d'un événement spécial ou d'une tenue quotidienne. 
+                Sa coupe moderne et ses motifs raffinés en font un choix idéal pour ceux qui apprécient le style africain contemporain.
+            </p>
+            <div class="quantity-section">
+                <span class="quantity-label">Quantité:</span>
+                <div class="quantity-controls">
+                    <button class="quantity-btn" onclick="decrement()">-</button>
+                    <span class="quantity-value" id="quantity">1</span>
+                    <button class="quantity-btn" onclick="increment()">+</button>
+                </div>
+            </div>
+            <button class="add-to-cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-cart-shopping"></i> Ajouter au panier
+            </button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>EMA-Services</h3>
+                <p>Votre plateforme de services tout-en-un</p>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p><i class="fas fa-phone"></i><a style="text-decoration: double; color: rgb(255, 255, 255);" href="tel:+7 930-334-89-96">+7 930-334-89-96</a></p>
+                <a style="color: aliceblue;" href="mailto:essongapea.a.b@gmail.com"><p><i class="fas fa-envelope"></i> essongapea.a.b@gmail.com</p></a>
+            </div>
+            <div class="footer-section">
+                <h4>Suivez-nous</h4>
+                <div class="social-links">
+                    <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 - EMA-Services. nous vous servons la classe.</p>
+        </div>
+    </footer>
+
+    <script>
+        let quantity = 1;
+
+        function increment() {
+            if (quantity < 10) {
+                quantity++;
+                document.getElementById('quantity').textContent = quantity;
+            }
+        }
+
+        function decrement() {
+            if (quantity > 1) {
+                quantity--;
+                document.getElementById('quantity').textContent = quantity;
+            }
+        }
+
+        function addToCart() {
+            const notification = document.getElementById('notification');
+            notification.style.display = 'block';
+            
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            const product = {
+                id: Date.now(),
+                name: 'Pagne traditionnel',
+                price: 13000,
+                image: '../img-ema/chemise bleu foncee.jpg',
+                quantity: quantity
+            };
+            cart.push(product);
+            localStorage.setItem('cart', JSON.stringify(cart));
+            
+            setTimeout(() => {
+                notification.style.display = 'none';
+            }, 3000);
+        }
+    </script>
+</body>
+
+</html>
