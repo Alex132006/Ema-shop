@@ -57,7 +57,7 @@ const products = [
         oldPriceText: "15.000 cfa",
         rating: 4.5,
         notes: 734,
-        description: "Le pagne moderne revisite les classiques avec des lignes épurées et des teintes actuelles. Son tissu premium assure une sensation de douceur et une tenue impeccable throughout the journée. Parfait pour celles et ceux qui souhaitent allier tradition africaine et tendance urbaine."
+        description: "Le pagne moderne revisite les classiques avec des lignes épurées et des teintes actuelles. Son tissu premium assure une sensation de douceur et une tenue impeccable throughout la journée. Parfait pour celles et ceux qui souhaitent allier tradition africaine et tendance urbaine."
     },
     {
         image: "../img-ema/chemise belge.jpg",
@@ -183,6 +183,7 @@ const products = [
 
 let currentProductIndex = null;
 let currentQuantity = 1;
+let lightboxOverlay = null;
 
 function createModal() {
     const modal = document.createElement('div');
@@ -224,6 +225,41 @@ function createModal() {
             closeProductModal();
         }
     });
+
+    document.getElementById('modal-product-image').addEventListener('click', function() {
+        openLightbox(document.getElementById('modal-product-image').src);
+    });
+}
+
+function createLightbox() {
+    lightboxOverlay = document.createElement('div');
+    lightboxOverlay.id = 'lightbox-overlay';
+    lightboxOverlay.className = 'lightbox-overlay';
+    lightboxOverlay.innerHTML = `
+        <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+        <img id="lightbox-image" src="" alt="" class="lightbox-image">
+    `;
+    document.body.appendChild(lightboxOverlay);
+
+    lightboxOverlay.addEventListener('click', function(e) {
+        if (e.target === lightboxOverlay) {
+            closeLightbox();
+        }
+    });
+}
+
+function openLightbox(imageSrc) {
+    if (!lightboxOverlay) return;
+    document.getElementById('lightbox-image').src = imageSrc;
+    lightboxOverlay.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+    if (lightboxOverlay) {
+        lightboxOverlay.style.display = 'none';
+    }
+    document.body.style.overflow = '';
 }
 
 function openProductModal(index) {
@@ -298,4 +334,5 @@ function addToCart() {
 
 document.addEventListener('DOMContentLoaded', function() {
     createModal();
+    createLightbox();
 });
